@@ -77,7 +77,14 @@ return {
 			capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 
 			local servers = {
-				clangd = {},
+				clangd = {
+					cmd = {
+						"clangd",
+						"--header-insertion=never", -- Optional: Avoid auto-including headers
+						"--compile-commands-dir=.", -- Ensure it looks for compile_commands.json in the root
+					},
+				},
+
 				gopls = {},
 				-- pyright = {},
 				-- rust_analyzer = {},

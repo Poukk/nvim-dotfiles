@@ -40,7 +40,7 @@ return {
 		}
 
 		dashboard.section.footer.val = {
-			'"Nika has returned!"',
+			"Mais ma meilleure ennemie, c'est toi",
 		}
 
 		vim.api.nvim_set_hl(0, "FooterQuote", { fg = "#ffae00", italic = true })
