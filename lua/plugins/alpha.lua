@@ -32,10 +32,10 @@ return {
 
 		-- Set buttons
 		dashboard.section.buttons.val = {
-			dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
 			dashboard.button("f", "⌕  Find file", ":Telescope find_files<CR>"),
 			dashboard.button("l", "󰒲  Lazy config", ":Lazy<CR>"),
-			dashboard.button("m", "  Mason", ":Mason<CR>"),
+			dashboard.button("m", "  Mason", ":Mason<CR>"),
+			dashboard.button("c", "  Config", ":cd ~/.config/nvim/ | e init.lua<CR>"),
 			dashboard.button("q", "  Quit", ":qa<CR>"),
 		}
 
